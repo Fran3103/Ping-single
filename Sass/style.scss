@@ -1,0 +1,272 @@
+@import url(/Sass/cssreload.css);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+$Blue: hsl(223, 87%, 63%);
+$PaleBlue: hsl(223, 100%, 88%);
+$LightRed: hsl(354, 100%, 66%);
+$Gray: hsl(0, 0%, 59%);
+$VeryDarkBlue: hsl(209, 33%, 12%);
+$background:#ffffff;
+
+$font-family: 'Libre Franklin';
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6em;
+    font-family: $font-family;
+    background-color: $background;
+    margin-top: 80px;
+}
+
+
+.container{
+    margin-top: 200px;
+    width: 80vw;    
+    .section_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .logo{
+        width: 50px;
+        margin: 20px 0;
+    }
+    .title{
+        margin-bottom: 10px;
+        font-weight: 300;
+        color:$Gray;
+        .span{
+            color:$VeryDarkBlue;
+            font-weight: 700;
+        }
+    }
+
+    .description{
+        margin-bottom:30px ;
+        color:$Gray;
+        font-weight: 600;
+    }
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 10px;
+
+        .email-container{
+            width: 100%;
+        .email{
+            width: 100%;
+            border-radius: 30px;
+            height: 40px;
+            border: 1px solid $Gray;
+            position: relative;
+            
+            
+        }}
+        .email::placeholder{
+            padding: 30px;
+            color: $Gray;
+            font-family: $font-family;
+            font-size: 0.8em;
+            outline: 10px;
+        }
+        .error{
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 1em;
+            color: $LightRed;
+            font-weight: 600;
+            margin-bottom: 10px;
+            position: relative;
+            right: 20%;
+            left: 20%;
+            
+            
+
+        }
+
+        .notify{
+            border-radius: 30px;
+            height: 40px;
+            border: none;
+            background-color: $Blue;
+            font-weight: 300;
+            color: white;
+            font-family: $font-family;
+            font-size: 1.2em;
+            box-shadow: 0 2px 6px 1px #d6d6d6;
+        }
+
+        .notify:hover{
+            cursor: pointer;
+            background-color: hsla(223, 87%, 63%, 0.801);
+        }
+    }
+
+
+    
+}
+
+
+    .img-illustration{
+
+        margin-top: 60px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .redes{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 100px auto;
+        margin-bottom: 20px;
+        color: $Blue;
+        
+        .fa-brands{
+        border: 1px solid #d6d6d6;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        padding: 5px 5.5px;
+        font-size: 1.4em;   
+    }
+
+    .fa-brands:hover{
+        background-color: $Blue;
+        color: white;
+        cursor: pointer;
+    }
+    .fa-facebook-f{
+        padding: 5px 7px;
+    }
+    }
+
+    
+}
+
+.Copyright{
+    color: $Gray;
+    margin-bottom: 20px;
+}
+
+
+
+footer{
+    .attribution { 
+        font-size: 1em; 
+        text-align: center; 
+        margin: 30px 0;
+        a {
+        text-decoration: none;
+        color: hsl(228, 45%, 44%); }
+    }
+}
+@media screen and (min-width:500px) {
+.container{
+    .form-container{
+    .form{
+    
+    .error{
+        left: 30%;
+        right: 30%;
+    }}}
+    .img-illustration{
+        height: 300px;
+    
+    }}
+    
+}
+
+@media screen and (min-width: 720px) {
+
+    .container{
+        margin-top: 200px;
+        width: 650px;
+
+        .section_1{
+            .logo{
+                width: 70px;
+                margin-bottom: 30px;
+            }
+        .title{
+            font-size: 3.5em;
+        }
+        .description{
+            font-size: 1.5em;
+        }
+        
+        }
+
+        .form-container{
+            
+            .form{
+                width: 100%;
+                flex-direction: row;
+
+                .email-container{
+                    width: 70%;
+                .email{
+                    width: 100%;
+                }
+                .error{
+                    right: 0;
+                    left: 3%;
+            
+            }}
+                .notify{
+                    width: 30%;
+                }
+            
+        }
+    }
+
+    .img-illustration{
+        height: 350px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .redes{
+        margin: 40px auto;
+        margin-bottom: 30px;
+
+        .fa-brands{
+            width: 35px;
+            height: 35px;
+            font-size: 1.7em;
+            padding: 8px 10px;
+        }
+        .fa-facebook-f{
+            padding: 8px 12px;
+        }
+    }
+
+}
+
+.Copyright{
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+
+footer{.attribution{
+    font-size: 1.5em;
+
+}
+}
+}
