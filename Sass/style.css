@@ -87,6 +87,7 @@ body {
   position: relative;
   right: 20%;
   left: 20%;
+  display: none;
 }
 .container .form-container .form .notify {
   border-radius: 30px;
