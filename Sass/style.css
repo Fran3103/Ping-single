@@ -61,18 +61,17 @@ body {
   border-radius: 30px;
   height: 40px;
   border: 1px solid hsl(0, 0%, 59%);
+  padding-left: 30px;
   position: relative;
+  background-color: transparent;
+  color: hsl(0, 0%, 59%);
 }
 .container .form-container .form .email::-moz-placeholder {
-  padding: 30px;
-  color: hsl(0, 0%, 59%);
   font-family: "Libre Franklin";
   font-size: 0.8em;
   outline: 10px;
 }
 .container .form-container .form .email::placeholder {
-  padding: 30px;
-  color: hsl(0, 0%, 59%);
   font-family: "Libre Franklin";
   font-size: 0.8em;
   outline: 10px;

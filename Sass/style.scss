@@ -71,13 +71,16 @@ body{
             border-radius: 30px;
             height: 40px;
             border: 1px solid $Gray;
+            padding-left: 30px;
             position: relative;
+            background-color: transparent;
+            color: $Gray;
             
             
         }}
         .email::placeholder{
-            padding: 30px;
-            color: $Gray;
+            
+            
             font-family: $font-family;
             font-size: 0.8em;
             outline: 10px;
